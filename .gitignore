@@ -1,0 +1,7 @@
+# Ignored files
+*.txt
+*.docx
+
+# Ignore loose WhatsApp Jpegs not currently used in the build
+*.jpeg
+*.jpg

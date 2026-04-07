@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Appliance Repair in Lucknow | Sameer Siddiqui Aircondition</title>
+    <meta name="description" content="Professional appliance repair service near me in Lucknow. Expert AC repair, refrigerator repair, and washing machine repair with same-day doorstep service.">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-wrapper">
+            <a href="index.html" class="logo">
+                <img src="images/sameer_logo_transparent.png" alt="Sameer Siddiqui Aircondition Logo" onerror="this.src=''; this.alt='Sameer Siddiqui Aircondition'; this.style.fontSize='1.4rem'; this.style.fontWeight='bold'; this.style.color='#0b1f3c';">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#services">Services</a>
+                <a href="verification.html">Verification</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a href="tel:18004103131" class="btn btn-primary">
+                Call Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Fast & Reliable Home Appliance Repair in Lucknow</h1>
+                    <p>We provide professional repair and maintenance services for air conditioners, refrigerators, and washing machines. Doorstep appliance repair service.</p>
+                    
+                    <div class="hero-features">
+                        <span><svg viewBox="0 0 24 24"><path d="M9 16.17l-4.17-4.17-1.42 1.41 5.59 5.59 12-12-1.41-1.41z"/></svg> Same Day Service</span>
+                        <span><svg viewBox="0 0 24 24"><path d="M9 16.17l-4.17-4.17-1.42 1.41 5.59 5.59 12-12-1.41-1.41z"/></svg> Experienced Techs</span>
+                        <span><svg viewBox="0 0 24 24"><path d="M9 16.17l-4.17-4.17-1.42 1.41 5.59 5.59 12-12-1.41-1.41z"/></svg> Affordable Pricing</span>
+                    </div>
+
+                    <div class="hero-disclaimer">
+                        <p>⚠️ IMPORTANT: We are an independent appliance repair service provider based in Lucknow. We are NOT an authorized service center of any brand.</p>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Form Widget -->
+                <div class="hero-form-wrapper" id="booking-form">
+                    <div class="hero-form">
+                        <h3>Book Service Online</h3>
+                        <form onsubmit="submitWhatsApp(event)">
+                            <div class="input-group">
+                                <input type="text" id="waName" placeholder="Your Name" required>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" id="waPhone" placeholder="Mobile Number" required pattern="[0-9]{10}">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="waCity" placeholder="Your City" required>
+                            </div>
+                            <div class="input-group">
+                                <select id="waAppliance" required>
+                                    <option value="" disabled selected>Select Appliance</option>
+                                    <option value="AC Repair">AC Repair & Service</option>
+                                    <option value="Refrigerator Repair">Refrigerator Repair</option>
+                                    <option value="Washing Machine Repair">Washing Machine Repair</option>
+                                    <option value="TV Repair">TV Repair</option>
+                                    <option value="Microwave Repair">Microwave Repair</option>
+                                    <option value="Dishwasher Repair">Dishwasher Repair</option>
+                                    <option value="Other Appliance">Other Appliance</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-accent btn-block">
+                                Confirm Booking
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Services in Lucknow</h2>
+            <p class="text-center" style="max-width: 600px; margin: 0 auto 40px;">We provide high-quality and affordable doorstep repair services for all major household appliances.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <img src="images/washing-machine.png" alt="AC Repair Service" onerror="this.style.display='none'">
+                    <h3>AC Repair & Service</h3>
+                    <p>Expert AC repair service in Lucknow. Gas filling, split AC, and window AC repair.</p>
+                    <a href="#booking-form" class="btn btn-primary service-btn" onclick="selectAppliance('AC Repair')">Book Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/fridge.png" alt="Refrigerator Repair" onerror="this.style.display='none'">
+                    <h3>Refrigerator Repair</h3>
+                    <p>Fridge repair near me. Fixing deep freezers, not cooling issues, and more.</p>
+                    <a href="#booking-form" class="btn btn-primary service-btn" onclick="selectAppliance('Refrigerator Repair')">Book Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/washing-machine.png" alt="Washing Machine Repair" onerror="this.style.display='none'">
+                    <h3>Washing Machine Repair</h3>
+                    <p>Front load, top load washing machine repair and comprehensive servicing.</p>
+                    <a href="#booking-form" class="btn btn-primary service-btn" onclick="selectAppliance('Washing Machine Repair')">Book Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/tv.png" alt="TV Repair Service" onerror="this.style.display='none'">
+                    <h3>TV Repair Service</h3>
+                    <p>Professional TV repair and installation. Fixing display, sound and panel issues.</p>
+                    <a href="#booking-form" class="btn btn-primary service-btn" onclick="selectAppliance('TV Repair')">Book Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/microwave.png" alt="Microwave Repair" onerror="this.style.display='none'">
+                    <h3>Microwave Repair</h3>
+                    <p>Microwave repair service for all models and sizes.</p>
+                    <a href="#booking-form" class="btn btn-primary service-btn" onclick="selectAppliance('Microwave Repair')">Book Now</a>
+                </div>
+                <div class="card">
+                    <img src="images/dishwasher.png" alt="Dishwasher Repair" onerror="this.style.display='none'">
+                    <h3>Dishwasher Service</h3>
+                    <p>Complete installation & maintenance services for your dishwashers.</p>
+                    <a href="#booking-form" class="btn btn-primary service-btn" onclick="selectAppliance('Dishwasher Repair')">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Why Choose Sameer Siddiqui Aircondition?</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-2.33v8.02z"/></svg></div>
+                    <div>
+                        <h4>Local Trusted Provider</h4>
+                        <p style="margin:0;font-size:0.9rem;">Appliance repair near me.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div>
+                    <div>
+                        <h4>Quick Response Time</h4>
+                        <p style="margin:0;font-size:0.9rem;">Fast doorstep service.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg></div>
+                    <div>
+                        <h4>Transparent Pricing</h4>
+                        <p style="margin:0;font-size:0.9rem;">No hidden costs.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg></div>
+                    <div>
+                        <h4>Skilled Technicians</h4>
+                        <p style="margin:0;font-size:0.9rem;">Experienced professionals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Customer Testimonials</h2>
+            <div class="grid" style="margin-top: 40px;">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Had an AC cooling issue. The technician visited the same day and fixed it quickly. Good service."</p>
+                    <div class="testimonial-author">
+                        <strong>– Ravi Sharma</strong>, Lucknow
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Called for washing machine repair. The technician arrived on time and did the job properly."</p>
+                    <div class="testimonial-author">
+                        <strong>– Neha Verma</strong>, Lucknow
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Got my refrigerator repaired. Charges were explained पहले ही. Transparent service."</p>
+                    <div class="testimonial-author">
+                        <strong>– Amit Singh</strong>, Lucknow
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center" style="margin-bottom: 40px;">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>Q. Do you provide same day service?</summary>
+                    <div class="faq-answer">Yes, we try to provide same day service across Lucknow.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>Q. Are you an authorized service center?</summary>
+                    <div class="faq-answer">No, we are an independent service provider. We service machines that are out of company warranty.</div>
+                </details>
+                <details class="faq-item">
+                    <summary>Q. What are your charges?</summary>
+                    <div class="faq-answer">Charges depend on the issue and will be informed before service begins.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-disclaimer">
+                <p>DISCLAIMER: We are an independent appliance repair service provider. We are NOT authorized, affiliated, or associated with any brand such as Samsung, LG, Bosch, Whirlpool, etc. All trademarks and brand names belong to their respective owners.</p>
+            </div>
+            
+            <div class="footer-grid">
+                <div>
+                    <h3>Sameer Siddiqui Aircondition</h3>
+                    <p>Appliance repair in Lucknow. Expert solutions for Air Conditioners, Refrigerators, and Washing Machines.</p>
+                    <p><strong>GSTIN:</strong> 09CUBPA8567P1ZY</p>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <p>📍 Lucknow, Uttar Pradesh</p>
+                    <p>📞 Phone: 1800 410 3131</p>
+                    <p>✉️ Email: support@24x7customer-service.online</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <a href="about.html">About Us</a>
+                    <a href="verification.html">Business Verification</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div>
+                    <h3>Legal</h3>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                    <a href="refund.html">Refund Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2026 Sameer Siddiqui Aircondition. All Rights Reserved.
+                <span><a href="privacy.html">Privacy</a> | <a href="terms.html">Terms</a> | <a href="disclaimer.html">Disclaimer</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function submitWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('waName').value;
+            const phone = document.getElementById('waPhone').value;
+            const city = document.getElementById('waCity').value;
+            const appliance = document.getElementById('waAppliance').value;
+            const message = `Hello, I want to book a service.\n*Appliance:* ${appliance}\n*Name:* ${name}\n*Phone:* ${phone}\n*City:* ${city}`;
+            window.open(`https://wa.me/9118004103131?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function selectAppliance(applianceValue) {
+            document.getElementById('waAppliance').value = applianceValue;
+        }
+    </script>
+</body>
+</html>
