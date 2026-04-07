@@ -158,8 +158,50 @@ details[open].faq-item summary::after { content: '-'; }
 .detail-row:last-child { border-bottom: none; }
 .detail-label { font-weight: 600; width: 150px; color: var(--primary-color); }
 
+/* Floating Call Button */
+.floating-call-container {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    pointer-events: none;
+}
+.floating-call-btn {
+    pointer-events: auto;
+    background: #1c3b8a; /* Deep bold blue per screenshot */
+    color: var(--white);
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 16px 45px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 85%;
+    max-width: 360px;
+    transition: 0.3s;
+}
+.floating-call-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+    color: var(--white);
+    background: var(--primary-color);
+}
+.floating-call-btn svg {
+    fill: currentColor;
+    width: 22px;
+    height: 22px;
+    margin-right: 12px;
+}
+
 /* Footer */
-footer { background: var(--primary-color); color: var(--white); padding: 60px 0 20px; margin-top: 60px;}
+footer { background: var(--primary-color); color: var(--white); padding: 60px 0 30px; margin-top: 60px;}
 footer h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 20px; }
 footer a { color: rgba(255,255,255,0.7); display: block; margin-bottom: 10px; }
 footer a:hover { color: var(--white); padding-left: 5px; }
@@ -182,4 +224,5 @@ footer p { color: rgba(255,255,255,0.7); }
   .hero h1 { font-size: 2.2rem; }
   .section { padding: 60px 0; }
   .content-box { padding: 25px; }
+  footer { padding-bottom: 100px; } /* Prevent footer from overlapping with floating button */
 }
